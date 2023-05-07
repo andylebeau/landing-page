@@ -1,15 +1,19 @@
 /* style.css */
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,300&display=swap');
 body {
     font-family: Roboto, serif;
     max-width: 1440px;
     min-height:100vh;
     margin: auto;
+    background-color: black;
   }
 
-.header {
+.header,
+.footer {
     background-color: #1F2937;
+}
+
+.header {
     display: flex;
     flex-direction: column;
     padding-left: 10%;
@@ -42,6 +46,10 @@ body {
     padding-top: 10%;
     padding-bottom: 10%;
     gap: 50px;
+}
+
+.placeholder > img {
+    width: auto;
 }
 
 .hero-left {
@@ -81,11 +89,6 @@ ul {
     color: #E5E7EB;
   }
 
-.images > img {
-    width: 100px;
-    height: 100px
-}
-
 .placeholder {
     flex-basis: 60%;
 }
@@ -108,3 +111,118 @@ button {
     padding-left: 5%;
     padding-right: 5%;
   }
+
+.info {
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-title {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1F2937;
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+
+.item > img {
+    border-radius: 10px;
+    width: 200px;
+    height: auto;
+  }
+
+.cats {
+    display: flex;
+    gap: 52px;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+
+.item {
+    max-width: 200px;
+}
+
+.item .text {
+    text-align: center;
+    color: gray;
+}
+
+.reviews {
+    display: flex;
+    background-color: #E5E7EB;
+    flex-direction: column;
+    justify-content: center;
+}
+
+q {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 300;
+    color: #1F2937;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 10%;
+}
+
+.reviews .credit {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 25%;
+    margin-right: 25%;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 8%;
+}
+
+.cta {
+    background-color: white;
+    display: flex;
+    padding: 6%;
+    justify-content: center;
+}
+
+.cta .container {
+    background-color: #3882F6;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    gap: 20%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+.cta-title {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.cta .text {
+    font-size: 20px;
+    color: #E5E7EB;
+}
+
+.cta-right button {
+    background-color: #3882F6;
+    border: 2px solid white;
+    font-size: 20px;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .text {
+    color: white;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
